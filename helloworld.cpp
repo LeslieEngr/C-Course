@@ -1,14 +1,17 @@
 #include <iostream>
-#include <vector>
+#include <ctime>
+#include <cstdlib>
 
-typedef std::vector<std::pair<std::string, int>> pairlist_t;
+
 
  int main(){
+   int num;
+   int guess;
+   int tries;
+   srand(time(NULL));
 
-    using namespace first;
-
-    pairlist_t pairlist;
-    
-
+   num = (rand() %100)+1;
+   std::cout << " .... number guessing game....\n";
+   std::cout << num  << rand() ;
     return 0;
  }
